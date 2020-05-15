@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Atividade JS 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">   
+</head>
+<script src="script.js"></script>
+<body>
+    <div>
+        <h2>Questão 1</h2>
+        <button type="button" class="btn btn-primary" id="botaoum" onclick="questaoum()">Clique aqui :)</button>
+    </div>
+    <br>
+    <div>
+        <h2>Questão 4</h2>
+        <img id="lampada" src="./apagada.jpg" onmouseover="acendeLampada()" onmouseout="apagaLampada()" onclick="quebraLampada()">
+    </div>
+
+    <div>
+        <h2>Questão 5</h2>
+        <button type="button" class="btn btn-primary" id="botaoum" onclick="questaocinco()">Clique aqui :)</button>
+        <h3>Questão 5a</h3>
+        <form id="form5a" onsubmit="questaocincoa()">
+            <label for="nome">Nome:</label>
+            <input id="nome" type="text"/>
+
+            <label for="sobrenome">Sobrenome: </label>
+            <input id="sobrenome" type="text"/>
+            <input type="submit" value="Saudação">
+        </form>
+    </div>
+
+    <div>
+        <h2>Questão 6</h2>
+        <label for="media">Números (separe por virgulas): </label>
+        <input id="media" type="text"/>
+        <input type="submit" value="Média!" onclick="questaoseis()">
+    </div>
+
+    <div>
+        <h2>Questão 7</h2>
+        <label for="quadrado">Números (separe os 5 números por virgulas): </label>
+        <input id="quadrado" type="text"/>
+        <input type="submit" value="Quadrado!" onclick="questaosete()">
+    </div>
+
+    <div>
+        <h2>Questão 8</h2>
+        <label for="maior">Números (separe os 5 números por virgulas): </label>
+        <input id="maior" type="text"/>
+        <input type="submit" value="Maior!" onclick="questaooito()">
+    </div>
+
+    <div>
+        <h2>Questão 9</h2>
+        <label for="idade">Idades (separe por virgulas): </label>
+        <input id="idade" type="text"/>
+        <input type="submit" value="Idades!" onclick="questaonove()">
+    </div>
+
+    <div>
+        <h2>Questão 10</h2>
+        <label for="nomes">Idades (separe por virgulas): </label>
+        <input id="nomes" type="text"/>
+        <input type="submit" value="Nomes!" onclick="questaodez()">
+    </div>
+
+</body>
+</html>
