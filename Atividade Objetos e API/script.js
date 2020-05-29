@@ -49,3 +49,48 @@ for (var i = 0; i < livros.length; i++) {
         console.log('Livro '+ (i+1) + " {\nTítulo: "+ livros[i].titulo + "\nAutor: " + livros[i].autor + "\nStatus: Você ainda não leu este livro.\n}\n");
     }
 }
+
+//Exercicio 3
+console.log('\n########## EXERCÍCIO 3 ###########\n');
+
+    fetch('https://api.github.com/users/hellolusca')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data)
+    })
+    .catch(error => console.log(error));
+
+
+//Exercicio 4
+console.log('\n########## EXERCÍCIO 4 ###########\n');
+
+    fetch('https://dog.ceo/api/breeds/image/random')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data)
+    })
+    .catch(error => console.log(error));
+
+//Exercicio 5
+console.log('\n########## EXERCÍCIO 5 ###########\n');
+
+    fetch('https://dog.ceo/api/breeds/image/random')
+    .then(response => response.json())
+    .then(data => {
+        console.log(`<img src="`+data.message+`alt="Random Photo of a Dog"/>`)
+    })
+    .catch(error => console.log(error));
+
+//Exercicio 6
+console.log('\n########## EXERCÍCIO 6 ###########\n');
+
+    fetch('https://dog.ceo/api/breeds/image/random')
+    .then(response => response.json())
+    .then(data => {
+        console.log(`<img src="`+data.message+`alt="Random Photo of a Dog"/>`)
+        document.getElementById("photo").src = data.message;
+        
+    })
+    .catch(error => console.log(error));
+
+
