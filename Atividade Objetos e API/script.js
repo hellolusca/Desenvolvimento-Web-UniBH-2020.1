@@ -93,4 +93,12 @@ console.log('\n########## EXERCÍCIO 6 ###########\n');
     })
     .catch(error => console.log(error));
 
-
+//Exercicio 8
+console.log('\n########## EXERCÍCIO 8  ###########\n');
+fetch('https://aws.random.cat/meow')
+    .then(response => response.json())
+    .then(data => {
+        console.log(`<img src="`+data.file+`alt="Random Photo of a cat"/>`);
+        document.getElementById("cat").src = data.file;
+    })
+    .catch(error => console.log(error));
