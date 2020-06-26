@@ -17,16 +17,18 @@ $( document ).ready(function() {
         while (countleft < divisao1) {
             var div = document.getElementById("conteudo-left");
             var newSection = document.createElement("section");
-            var conteudo = document.createTextNode("Name: "+data[countleft].name+"\nEmail: "+data[countleft].email+"\nPost: "+data[countleft].body);
+            var conteudo = document.createTextNode("Title: "+data[countleft].title+"\nPost: "+data[countleft].body);
             newSection.appendChild(conteudo);
             div.appendChild(newSection);
             countleft++
+            console.log(data[countleft]);
+            
         }
 
         while (countright < length) {
             var div = document.getElementById("conteudo-right");
             var newSection = document.createElement("section");
-            var conteudo = document.createTextNode("Name: "+data[countright].name+"\nEmail: "+data[countright].email+"\nPost: "+data[countright].body);
+            var conteudo = document.createTextNode("Title: "+data[countright].title+"\nPost: "+data[countright].body);
             newSection.appendChild(conteudo);
             div.appendChild(newSection);
             countright++
