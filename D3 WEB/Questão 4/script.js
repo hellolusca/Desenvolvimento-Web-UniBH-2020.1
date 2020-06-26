@@ -55,7 +55,7 @@ function enviarPost() {
     .then(
         function(data) {
         console.log(data);
-        
+        alert("Postado!")        
         }
     ); 
 }
