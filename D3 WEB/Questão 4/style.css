@@ -1,0 +1,18 @@
+#conteudo-left {
+    width:50%;
+    height:100%;
+    float:left;
+    background-color:rgb(238, 238, 141);
+}
+
+#conteudo-right {
+    width:50%;
+    height:100%;
+    float:left;
+    background-color:rgb(240, 180, 180);
+}
+
+section {
+    background-color: grey;
+    margin: 3px;
+}
